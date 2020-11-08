@@ -1,0 +1,26 @@
+[options="header", cols="1h, 4"]
+[[klassen_enumerationen]]
+|===
+|Klasse/Enumeration |Beschreibung
+|Admin              |Ein Admin ist ein spezieller Mitarbeiter, der zusätzlich über die Mitarbeiter verwalten kann.
+|Book               |Ein Buch ist ein möglicher Artikel, den ein Kunde kaufen kann. Bücher werden zusammen angezeigt.
+|Bookshop           |Zentrale Klasse, die die Buchhandlung repräsentiert.
+|Calendar           |Der Kalender speichert alle zukünftigen Veranstaltungen. Ihm können Veranstaltungen hinzugefügt und entfernt werden.
+|Cart               |Ein Einkaufswagen ist eine temporäre Ablage für Artikel (Bücher, CDs, DVDs), die ein Kunde kaufen möchte. Wenn ein Kunde die Artikel kauft, wird eine Bestellung erzeugt. Jeder Kunde hat seinen eigenen Einkaufswagen.
+|CartItem           |Ein Element des Einkaufswagens wird verwendet, um zu dem Artikel, den ein Kunde kaufen möchte, zusätzlich noch die Anzahl der Artikel zu speichern.
+|CD                 |Eine CD ist ein möglicher Artikel, den ein Kunde kaufen kann. CDs werden zusammen angezeigt.
+|Customer           |Ein Kunde repräsentiert einen Nutzer, der in der Lage ist Artikel zu kaufen und sich in Veranstaltungen einzutragen.
+|DVD                |Eine DVD ist ein möglicher Artikel, den ein Kunde kaufen kann. DVDs werden zusammen angezeigt.
+|Employee           |Ein Mitarbeiter repräsentiert einen Nutzer, der Kunden verwalten kann und Veranstaltungen erstellen kann. Ein Mitarbeiter kann keine Artikel kaufen.
+|Event              |Eine Veranstaltung repräsentiert einen echten Termin, zu dem sich Kunden eintragen können.
+|Item               |Ein Artikel repräsentiert ein generelles Produkt, das ein Kunde kaufen kann. Ein Kunde kauft allerdings eine spezielle Form eines Artikels (Buch, CD, DVD).
+|Order              |Eine Bestellung speichert die Artikel, die ein Kunde gekauft hat und deren Preis. Zu jeder Bestellung kann eine Rechnung erstellt werden.
+|OrderItem          |Ein Element der Bestellung wird verwendet, um zu dem gekauften Artikel auch die Anzahl zu speichern.
+|OrderManagement    |Die Bestellverwaltung repräsentiert eine Klasse, die alle existierenden Bestellungen kennt. Über sie werden auch neue Bestellungen abgeschlossen.
+|Review             |Eine Bewertung besteht aus einem Kommentar und einer Anzahl an Sternen, die ein Käufer oder eine beliebige andere Person an einen Artikel vergibt.
+|ReviewWriter       |Ein Bewertungs-Schreiber wird genutzt, um einen registrierten Kunden mit einer Bewertung zu verknüpfen. Bewertungen von registrierten Kunden, die den Artikel gekauft haben werden hervorgehoben.
+|Stock              |Das Lager repräsentiert den gesamten Vorrat an Produkten, die im Laden vorhanden sind. Das Lager kann nach bestimmten Artikeln durchsucht werden.
+|StockItem          |Ein Element des Lagers wird verwendet, um zu dem Artikel, die vorhanden sind, zusätzlich die Anzahl im Lager zu speichern.
+|User               |Ein Benutzer ist eine generelle Repräsentation einer echten Person. Benutzer werden spezialisiert (Kunde, Mitarbeiter, Admin). Dadurch werden jedem speziellen Benutzer eigene Funktionen zugeordnet.
+|UserManagement     |Die Benutzerverwaltung repräsentiert eine Klasse, die alle existierenden Benutzer (Kunden, Mitarbeiter, Admins) kennt. Über sie werden neue Benutzer hinzugefügt oder gelöscht. Sie ist außerdem für die Rechteverwaltung zuständig.
+|===
